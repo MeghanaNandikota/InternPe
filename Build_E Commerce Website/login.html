@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title> LOGIN </title>
+	<link rel="stylesheet" href="style_login.css">
+</head>
+<script type="text/javascript">
+	function trav(){
+		alert("Login Success!");
+		location.href="index.html";
+	}
+	function traverse(){
+		location.href="index.html";
+	}
+</script>
+<body>
+
+	<section id="header">
+		<a href="#"><img src="img/logo.png" class="logo" alt=""/></a>
+		
+		<div>
+			<ul id="navbar">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a class="active" href="signup.html">Login/Sign up</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+				<a href="#" id="close"><i class="far fa-times"></i></a>
+			</ul>
+		</div>
+		<div id="mobile">
+			<a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+			<i id="bar" class="fas fa-outdent"></i>
+		</div>
+	</section>
+
+	<section>
+			<p></p><p></p><p></p>
+		<div class="center">
+			<h1>LOGIN</h1>
+			<form method="post">
+				<div class="s1">
+				<div class="txt_field">
+					
+					<input type="text" required="required">
+					<label>USERNAME:</label>
+					
+				</div>
+			</div>
+			<div class="s2">
+				<div class="txt_field">
+					
+					<input type="password" required="required">
+					<label>PASSWORD:</label>
+
+				</div>
+			</div>
+				<input type="button" value="LOGIN" onclick="trav()"><br/>
+				<br>
+				<input type="button" value="CANCEL" onclick="traverse()">
+				<div class="signup_link">
+					Not a member? <a href="signup.html">SIGN UP</a>
+				</div>
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>
